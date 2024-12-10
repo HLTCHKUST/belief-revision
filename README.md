@@ -20,7 +20,7 @@ We evaluate ~30 LMs across diverse prompting strategies and found that LMs gener
 
 In Belief-R, the task requires the model to perform multi-step reasoning to manage information relevance and discern implicit commonsense and causal links amongst given premises. It requires the model to then decide to update its initial conclusion if the new information imply an additional requirement for its prior beliefs to hold, or to maintain its prior beliefs if it simply serves as alternatives.
 
-Through the delta reasoning ($\Delta R$) framework, we evaluate the belief revision capability of language model in two sequential steps: <i><b>step t+1</b></i> (`time_t`) and <i><b>step t+1</b></i> (`time_t1`). We treat the inference at <i><b>step t</b></i> as reasoner’s initial belief, and measure LMs belief revision ability in the inference at <i><b>step t+1</b></i> through multiple-choice accuracies on:
+Through the delta reasoning ($\Delta R$) framework, we evaluate the belief revision capability of language model in two sequential steps: <i><b>step t</b></i> (`time_t`) and <i><b>step t+1</b></i> (`time_t1`). We treat the inference at <i><b>step t</b></i> as reasoner’s initial belief, and measure LMs belief revision ability in the inference at <i><b>step t+1</b></i> through multiple-choice accuracies on:
 - Belief Update accuracy (BU-Acc)
 - Belief Maintain accuracy (BM-Acc), and
 - BREU: Belief Revision Evaluation Understudy; by equally averaging BU-Acc and BM-Acc.
